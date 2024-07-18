@@ -10,7 +10,8 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
-import controllers.Contact_cotroller as Contact_cotroller
+import controllers.Contact_controller as Contact_controller
+import controllers.User_controller as User_controller
 with app.app_context():
     db.create_all()
 
