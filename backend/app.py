@@ -10,7 +10,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
-import routes
+import controllers.Contact_cotroller as Contact_cotroller
 with app.app_context():
     db.create_all()
 
