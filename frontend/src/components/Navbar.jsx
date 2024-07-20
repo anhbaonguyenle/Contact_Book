@@ -1,4 +1,4 @@
-import { Container, Box, Flex, Link, Button, useColorMode } from "@chakra-ui/react"
+import { Container, Box, Flex, Link, Button, useColorMode, useColorModeValue,  } from "@chakra-ui/react"
 import { IoMoon } from "react-icons/io5";
 import { LuSun } from "react-icons/lu";
 
@@ -6,10 +6,10 @@ const Navbar = () => {
     const { colorMode, toggleColorMode } = useColorMode();
     return <Container maxW={"2000"}>
         <Box
-            px={4}
-            my={4}
-            borderRadius={5}
-            bg={"gray.700"}
+        px={4}
+        my={4}
+        borderRadius={5}
+        bg={useColorModeValue("gray.200", "gray.700")}
         >
             <Flex h="16"
             alignItems={"center"}
