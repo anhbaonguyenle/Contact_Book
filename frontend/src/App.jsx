@@ -21,9 +21,7 @@ function App() {
 					<Text as={"span"} bgGradient={"linear(to-r, cyan.400, blue.500)"} bgClip={"text"}>
 						My Connect
 					</Text>
-				
 				</Text>
-
 			</Container>
 		</Stack>
 	);
